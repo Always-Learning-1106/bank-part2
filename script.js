@@ -30,3 +30,4 @@ btnsOpenModal.forEach(function (open) {
     }
   });
 });
+// event bubbling
