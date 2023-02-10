@@ -31,10 +31,10 @@ btnsOpenModal.forEach(function (open) {
   });
 });
 // event bubbling
-function findElement(arr, func) {
-  let truth = arr.filter(curr => func(curr) === true);
+// function findElement(arr, func) {
+//   let truth = arr.filter(curr => func(curr) === true);
 
-  return truth.slice(0, 1)[0];
-}
+//   return truth.slice(0, 1)[0];
+// }
 
-console.log(findElement([2, 2, 2, 4], num => num % 2 === 0));
+// console.log(findElement([2, 2, 2, 4], num => num % 2 === 0));
