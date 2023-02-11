@@ -38,3 +38,4 @@ btnsOpenModal.forEach(function (open) {
 // }
 
 // console.log(findElement([2, 2, 2, 4], num => num % 2 === 0));
+//css grid all day today
