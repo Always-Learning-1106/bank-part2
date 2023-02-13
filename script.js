@@ -30,3 +30,21 @@ btnsOpenModal.forEach(function (open) {
     }
   });
 });
+
+function getIndexToIns(arr, num) {
+  if (arr[0] === undefined) {
+    arr.push(num);
+  }
+  function sorted(a, b) {
+    return a - b;
+  }
+  arr.sort(sorted);
+  arr.map((curr, i, arr) => {
+    if (curr < num && num < arr[i + 1] && arr[i + 1]) {
+      arr.splice(i + 1, 0, num);
+    } else arr.push(num);
+  });
+  return arr.indexOf(num);
+}
+
+console.log(getIndexToIns([], 1));
